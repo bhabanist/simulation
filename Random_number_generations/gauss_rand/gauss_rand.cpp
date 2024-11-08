@@ -16,7 +16,7 @@ int main() {
         return 1;
     }
 
-    int i, n;
+    int i, n,seed;
     double x, random_num, I, stder, f_val, f_val2;
 
     cout << "Number of sample points: ";
@@ -24,7 +24,8 @@ int main() {
 
     f_val = 0;
     f_val2 = 0;
-
+    seed=78741;
+    srand48(seed);
     for (i = 0; i <= n; i++) { 
         random_num = drand48();
         // random number between 0 and 1 (default seed is 1)

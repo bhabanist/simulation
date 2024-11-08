@@ -9,7 +9,7 @@ plt.figure(figsize=(10, 4))
 plt.scatter(data[:, 0], data[:, 1], color="red", alpha=1.0, s=5)
 plt.ylabel("Random Number Value")
 plt.xlabel("Iteration")
-plt.savefig("drand48rn.pdf", dpi=600)
+plt.savefig("srand48rn.pdf", dpi=600)
 
 
 # Histogram of the second column
@@ -22,5 +22,5 @@ plt.plot(bin_centers, histy, drawstyle='steps-mid', color="blue")
 plt.xlabel("Random Number Value")
 plt.ylabel("Frequency")
 plt.ylim(0,1000)
-plt.savefig("drand48rn_hist.pdf",dpi=600)
+plt.savefig("srand48rn_hist.pdf",dpi=600)
 
